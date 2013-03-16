@@ -53,6 +53,25 @@ import Control.Monad.Trans.Resource
 import Control.Monad.Base
 import Control.Monad.Parallel (Parallel(..), Fork(..), parallelIO)
 
+-- | HTTP Headers
+--headerAccept, headerAuthorization, headerCacheControl, headerConnection, headerContentLength, headerContentType, headerContentMD5, headerDate :: B.ByteString -> Header
+headerAccept        = (,) hAccept
+{-# DEPRECATED headerAccept "Use hAccept instead" #-}
+headerAuthorization = (,) hAuthorization
+{-# DEPRECATED headerAuthorization "Use hAuthorization instead" #-}
+headerCacheControl  = (,) hCacheControl
+{-# DEPRECATED headerCacheControl "Use hCacheControl instead" #-}
+headerConnection    = (,) hConnection
+{-# DEPRECATED headerConnection "Use hConnection instead" #-}
+headerContentLength = (,) hContentLength
+{-# DEPRECATED headerContentLength "Use hContentLength instead" #-}
+headerContentMD5    = (,) hContentMD5
+{-# DEPRECATED headerContentMD5 "Use hContentMD5 instead" #-}
+headerContentType   = (,) hContentType
+{-# DEPRECATED headerContentType "Use hContentType instead" #-}
+headerDate          = (,) hDate
+{-# DEPRECATED headerDate "Use hDate instead" #-}
+
 -- | Information about your neo4j configuration needed to make requests over the REST api.
 data DBInfo = DBInfo {
 	cypher_hostname :: Hostname,
