@@ -51,7 +51,7 @@ Library
   
   -- Packages needed in order to build this package.
   Build-depends:         base < 5
-                       , aeson
+                       , aeson == 0.6.1.*
                        , unordered-containers
                        , vector == 0.9.*
                        , http-conduit
