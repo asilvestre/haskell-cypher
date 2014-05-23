@@ -50,18 +50,19 @@ Library
   Exposed-modules:     Database.Cypher, Database.Cypher.Lucene
   
   -- Packages needed in order to build this package.
-  Build-depends:         base < 5
+
+  Build-depends:         base
                        , aeson == 0.6.1.*
                        , unordered-containers
-                       , vector == 0.9.*
+                       , vector
                        , http-conduit
                        , transformers
                        , conduit
                        , text
                        , bytestring
-                       , http-types <1
-                       , attoparsec <1
-                       , resourcet == 0.3.*
+                       , http-types
+                       , attoparsec
+                       , resourcet
                        , classy-parallel
                        , transformers-base
   
